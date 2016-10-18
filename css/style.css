@@ -6,3 +6,17 @@ header, main, footer {
         padding-left: 0;
     }
 }
+
+/* via https://github.com/Dogfalo/materialize/issues/1123 */
+.navbar-fixed nav { 
+    position: fixed; 
+    /* width is 100% minus the fixed left navbar (240px) */
+    width: -moz-calc(100% - 240px); /* Firefox */
+    width: -webkit-calc(100% - 240px); /* Chrome, Safari */
+    width: calc(100% - 240px); /* IE9+ and future browsers */
+} 
+
+@media only screen and (max-width : 992px) {
+/* width is 100% because the fixed left navbar is not displayed */
+    .navbar-fixed nav { width: 100% }
+}
