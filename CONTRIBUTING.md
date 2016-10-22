@@ -7,6 +7,8 @@
 
 * Make sure your Pull Requests have as less commits as possible in them. Squash multiple commits into one if you have to.
 
+* Don't make changes into the master. Create a new branch instead.
+
 
 When contributing to this repository, please first discuss the change you wish to make via issue,
 email, or any other method with the owners of this repository before making a change.
